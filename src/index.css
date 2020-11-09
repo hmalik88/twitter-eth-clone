@@ -5,9 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+body, html, #root {
+  height: 100%
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* LANDING PAGE */
+
+.landing {
+  height: 100%;
+  display: flex;
+}
+
+.landing-left {
+  background-color: rgb(133,200,243);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.landing-right {
+  background-color: rgb(23,32,42);
+  height: 100%;
+  width: 50%;
+}
+
+.landing-right {
+  z-index: 2;
+}
+
+.landing-logo {
+  height: 240vh;
+  top: -70vh;
+  position: absolute;
+  right: 5vh;
+  display: inline-block;
+  max-width: none;
+}
+
+.left-landing-info {
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.search-icon, .users-icon, .speech-icon {
+  height: 28.75px;
+  width: 28.75px;
+  position: relative;
+}
+
+.info-1, .info-2, .info-3 {
+  display: flex;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.info-1 > div, .info-2 > div, .info-3 > div {
+  margin-left: 15px;
+  line-height: 30px;
+  font-size: 19px;
+  color: white;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+}
+
+

@@ -9,8 +9,8 @@ function Layout(props) {
         <>
             <Grid container>
                 <Grid item sm={3}><SideBar /></Grid>
-                <Grid item sm={3}><Feed page={props.page} /></Grid>
-                <Grid item sm={3}><RightPanel /></Grid>
+                <Grid item sm={5}><Feed page={props.page} /></Grid>
+                <Grid item sm={4}><RightPanel /></Grid>
             </Grid>
         </>
     )
