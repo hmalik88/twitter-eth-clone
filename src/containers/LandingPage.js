@@ -4,6 +4,7 @@ import TwitterLogo from '../assets/Twitter_Logo_Blue.svg';
 import SearchIcon from '../assets/white-search.svg';
 import UsersIcon from '../assets/users.svg';
 import SpeechIcon from '../assets/speech.svg';
+import LandingLoginForm from '../components/LandingLoginForm';
 
 function LandingPage() {
 
@@ -27,6 +28,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="landing-right">
+                <LandingLoginForm />
             </div>
         </div>
     )

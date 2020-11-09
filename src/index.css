@@ -38,10 +38,11 @@ code {
   background-color: rgb(23,32,42);
   height: 100%;
   width: 50%;
+  z-index: 2;
 }
 
-.landing-right {
-  z-index: 2;
+.landing-right, .landing-left {
+  padding: 15px;
 }
 
 .landing-logo {
@@ -80,6 +81,41 @@ code {
   color: white;
   font-family: 'Helvetica Neue';
   font-weight: 700;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-button {
+  background-color: rgba(0,0,0,0);
+  min-width: 62.79px;
+  min-height: 39px;
+  height: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-color: rgb(29, 161, 242);
+  border-width: 1px;
+  border-radius: 9999px;
+  font-size: 15px;
+  color: rgb(29, 161, 242);
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.landing-button:hover {
+  background-color: rgba(29,161,242, 0.1);
+}
+
+.landing-button > span {
+  align-self: center;
 }
 
 
