@@ -1,13 +1,22 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import TwitterLogo from '../assets/Twitter_Logo_Blue.svg';
 import SearchIcon from '../assets/white-search.svg';
 import UsersIcon from '../assets/users.svg';
 import SpeechIcon from '../assets/speech.svg';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import LandingLoginForm from '../components/LandingLoginForm';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+    icon: {
+        width: "41.25px",
+        height: "41.25px",
+        color: "white"
+    }
+});
 
 function LandingPage() {
-
+    const classes = useStyles();
     return(
         <div className="landing">
             <div className="landing-left">
@@ -29,6 +38,13 @@ function LandingPage() {
             </div>
             <div className="landing-right">
                 <LandingLoginForm />
+                <div>
+                    <TwitterIcon className={classes.icon} />
+                    <span>See what's happening in the world right now</span>
+                    <div>
+                        <span>Join Twitter today.</span>
+                    </div>
+                </div>
             </div>
         </div>
     )
