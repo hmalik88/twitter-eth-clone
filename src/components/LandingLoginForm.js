@@ -10,14 +10,15 @@ function LandingLoginForm() {
                     label="Email"
                     style={{paddingRight: '15px'}}
                     InputLabelProps={{style: { color: 'rgb(29,161,242)', fontSize: '15px'}}}
-                    InputProps={{style: {backgroundColor: 'rgb(25,39,52)'}}}
+                    InputProps={{style: {backgroundColor: 'rgb(25,39,52)', color: 'white', font: '700 13.3333px Arial'}}}
                 />
                 <TextField 
                     variant="filled"
                     label="Password"
+                    type="password"
                     style={{paddingRight: '15px'}}
                     InputLabelProps={{style: { color: 'rgb(29,161,242)', fontSize: '15px'}}}
-                    InputProps={{style: {backgroundColor: 'rgb(25,39,52)'}}}
+                    InputProps={{style: {backgroundColor: 'rgb(25,39,52)', color: 'white', font: '700 13.3333px Arial'}}}
                 />
                 <button type="submit" className="landing-button">
                     <span>Log in</span>
