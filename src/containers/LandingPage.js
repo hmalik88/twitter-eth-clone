@@ -6,6 +6,7 @@ import SpeechIcon from '../assets/speech.svg';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LandingLoginForm from '../components/LandingLoginForm';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     icon: {
@@ -38,12 +39,24 @@ function LandingPage() {
             </div>
             <div className="landing-right">
                 <LandingLoginForm />
-                <div>
+                <div className="landing-right-info">
                     <TwitterIcon className={classes.icon} />
-                    <span>See what's happening in the world right now</span>
-                    <div>
+                    <div className="lr-txt-1">
+                        <span>See what's happening in the world right now</span>
+                    </div>
+                    <div className="lr-txt-2">
                         <span>Join Twitter today.</span>
                     </div>
+                    <Link className={"sign-up-link"}>
+                        <div className="sign-up-btn">
+                            <span>Sign up</span>
+                        </div>
+                    </Link>
+                    <Link className={"log-in-link"}>
+                        <div className="log-in-btn">
+                            <span>Log in</span>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

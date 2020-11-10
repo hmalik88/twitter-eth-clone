@@ -39,6 +39,9 @@ code {
   height: 100%;
   width: 50%;
   z-index: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .landing-right, .landing-left {
@@ -87,6 +90,11 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  padding-left: 15px;
+  padding-right: 15px;
+  top: 15px;
+  right: 9%;
 }
 
 .landing-button {
@@ -118,4 +126,79 @@ form {
   align-self: center;
 }
 
+.landing-right-info {
+  display: flex;
+  align-self: center;
+  align-items: stretch;
+  max-width: 380px;
+  flex-flow: column;
+}
 
+.lr-txt-1 {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Helvetica Neue';
+  overflow-wrap: break-word;
+  line-height: 1.3125;
+  display: inline;
+}
+
+.lr-txt-2 {
+  margin-top: 59px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-family: 'Helvetica Neue';
+  line-height: 1.3125;
+  color: white;
+}
+
+.sign-up-link, .log-in-link {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-width: 1px;
+  border-radius: 9999px;
+  text-decoration: none;
+  min-height: 39px;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-link {
+    margin-bottom: 15px;
+    background-color: rgb(29,161,242);
+    border-color: rgba(0,0,0,0);
+}
+
+.sign-up-link:hover {
+  background-color: rgb(26,145,218);
+}
+
+.log-in-link {
+  border: 1px solid rgb(29,161,242);
+}
+
+.log-in-link:hover {
+  background-color: rgba(29,161,242, 0.1);
+}
+
+.sign-up-btn, .log-in-btn {
+  line-height: 1;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Helvetica Neue';
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.sign-up-btn {
+  color: white;
+}
+
+.log-in-btn {
+  color: rgb(29,161,242);
+}
