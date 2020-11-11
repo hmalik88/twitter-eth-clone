@@ -19,16 +19,16 @@ function Sidebar() {
             <TwitterIcon className="sidebar-twitterIcon mobileHidden" />
         </Link>
         <div className="sidebar">
-            <SidebarOption active Icon={HomeIcon} text="Home" href="/" />
-            <SidebarOption Icon={SearchIcon} text="Explore" href="/" />
+            <SidebarOption active Icon={HomeIcon} text="Home" href="#" />
+            <SidebarOption Icon={SearchIcon} text="Explore" href="#" />
             <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" href="https://github.com/hmalik88" />
             <SidebarOption Icon={MailOutlineIcon} text="Messages" href="https://www.linkedin.com/in/hassan-b-malik/" />
-            <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" mobileHidden href="/" />
-            <SidebarOption Icon={ListAltIcon} text="Lists" mobileHidden href="https://leetcode.com/hbmalik88/" />
+            <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" mobileHidden href="https://leetcode.com/hbmalik88/" />
+            <SidebarOption Icon={ListAltIcon} text="Lists" mobileHidden href="#" />
             <SidebarOption Icon={PermIdentityIcon} text="Profile"  href="/" />
-            <SidebarOption Icon={MoreHorizIcon} text="More" mobileHidden href="/" />
+            <SidebarOption Icon={MoreHorizIcon} text="More" mobileHidden href="#" />
             <br/>
-            <Button variant="outlined" className="sidebar-tweetButton mobileHidden" fullWidth href="/">
+            <Button variant="outlined" className="sidebar-tweetButton mobileHidden" fullWidth href="#">
                 Tweet
             </Button>
         </div>
