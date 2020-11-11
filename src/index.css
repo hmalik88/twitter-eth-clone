@@ -645,6 +645,7 @@ input#search {
   margin-left: 20px;
   font-size: 20px;
   border: none;
+  outline: none;
   background-color: rgb(23,32,42);
   color: white;
 }
