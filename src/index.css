@@ -348,6 +348,7 @@ code {
   background-color: rgb(23,32,42);
   width: 100%;
   height: 100%;
+  display: flex;
 }
 
 .login-form-container {
@@ -358,11 +359,15 @@ code {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 367px;
 }
 
 .login-text {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 23px;
   font-family: 'Helvetica Neue';
@@ -373,4 +378,43 @@ code {
 
 .login-text > span {
   text-align: center;
+}
+
+.login-page {
+  width: 100%;
+  height: 100%;
+}
+
+.login-page-form {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
+
+.login-form-btn:hover {
+  background-color: rgb(26,145,218);
+}
+
+.login-signup-link {
+  color: rgb(27, 149, 224);
+  font-size: 15px;
+  font-family: 'Helvetica Neue';
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-signup-link:hover {
+  text-decoration: underline;
+}
+
+.disabled-1 {
+  pointer-events: none;
+  background-color: rgba(110,118,125,1);
+}
+
+.position-signup {
+  left: 28vw;
 }

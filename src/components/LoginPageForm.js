@@ -4,10 +4,11 @@ import TextField from '@material-ui/core/TextField';
 
 function LoginPageForm() {
     return(
-        <form>
+        <form className="login-page-form">
             <TextField 
                 variant="filled"
                 label="Email"
+                style={{marginBottom: '15px'}}
                 InputLabelProps={{
                     style: { 
                         color: 'rgb(29,161,242)', 

@@ -64,7 +64,7 @@ function LandingPage() {
                                 <span>Sign up</span>
                             </div>
                         </div>
-                        <Link className={"log-in-link"}>
+                        <Link to={'/login'} className={"log-in-link"}>
                             <div className="log-in-btn">
                                 <span>Log in</span>
                             </div>
