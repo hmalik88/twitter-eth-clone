@@ -4,7 +4,7 @@ import LandingRoutes from "./containers/LandingRoutes";
 import ProtectedRoutes from "./containers/ProtectedRoutes";
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedIn, setLoggedIn] = useState(true);
 
 
   return (
