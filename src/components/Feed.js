@@ -2,6 +2,7 @@ import React from "react";
 import TweetBox from "./TweetBox";
 import Post from "./Post";
 import {posts} from "../data"
+import sparkles from '../assets/sparkle.svg';
 
 
 function Feed() {
@@ -10,6 +11,7 @@ function Feed() {
     <div className="feed">
       <div className="feed-header">
         <h2>Home</h2>
+        <img src={sparkles} className="sparkles" />
       </div>
 
       <TweetBox />

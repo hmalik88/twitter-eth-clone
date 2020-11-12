@@ -5,7 +5,7 @@ import TwitterLogo from '../assets/Twitter_Logo_Blue.svg';
 function TweetBox() {
   return (
     <div className="tweetBox">
-      <form>
+      <form className="tweet-form">
         <div className="tweetBox-input">
           <Avatar src={TwitterLogo} />
           <input
@@ -14,13 +14,13 @@ function TweetBox() {
           />
         </div>
 
-        <Button
+        <button
           href="/"
           type="submit"
           className="tweetBox-tweetButton"
         >
           Tweet
-        </Button>
+        </button>
       </form>
     </div>
   );

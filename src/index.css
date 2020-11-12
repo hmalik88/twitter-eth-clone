@@ -479,6 +479,10 @@ code {
   width: 187.5px;
 }
 
+.sidebar-tweet-btn:hover {
+  background-color: rgb(26,145,218);
+}
+
 .sidebarOption {
   display: flex;
   align-items: center;
@@ -525,11 +529,20 @@ code {
   border-bottom: 1px solid rgb(40,51,64);
   padding: 15px 20px;
   color: white;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .feed-header > h2 {
   font-size: 20px;
   font-weight: 800;
+}
+
+.sparkles {
+  height: 22.5px;
+  width: 22.5px;
 }
 
 /* Hide scrollbars */
@@ -661,11 +674,16 @@ input#search {
 
 /* TWEETBOX */
 
+.tweet-form {
+  width: 100%;
+  height: 100%;
+}
+
 .tweetBox {
   padding-bottom: 10px;
   border-bottom: 8px solid rgb(40,51,64);
   padding-right: 10px;
-  
+  height: 117.94px;
 }
 
 .tweetBox > form {
@@ -676,6 +694,7 @@ input#search {
 
 .tweetBox-input {
   padding: 20px;
+  padding-bottom: 0px;
   display: flex;
 }
 
@@ -695,14 +714,19 @@ input#search {
 }
 
 .tweetBox-tweetButton {
-  background-color: #50b7f5 !important;
-  border: none !important;
-  color: white !important;
-  font-weight: 900 !important;
-  text-transform: inherit !important;
-  border-radius: 30px !important;
+  background-color: rgb(29,161,242);
+  border: none;
+  color: white;
+  font-weight: 900;
+  text-transform: inherit;
+  border-radius: 30px;
   width: 80px;
-  height: 40px !important;
-  margin-top: 20px !important;
-  margin-left: auto !important;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.tweetBox-tweetButton:hover {
+  background-color: rgb(26,145,218);
 }
