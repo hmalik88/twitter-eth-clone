@@ -1,6 +1,10 @@
 import React from "react";
 import { Avatar, Button } from "@material-ui/core";
 import TwitterLogo from '../assets/Twitter_Logo_Blue.svg';
+import ethNormal from '../assets/normal-eth.svg';
+import isEth from '../assets/is-eth.svg';
+import ethSuccess from '../assets/success-eth.svg';
+import ethError from '../assets/error-eth.svg';
 
 function TweetBox() {
   return (
@@ -13,14 +17,20 @@ function TweetBox() {
             type="text"
           />
         </div>
-
-        <button
-          href="/"
-          type="submit"
-          className="tweetBox-tweetButton"
-        >
-          Tweet
-        </button>
+        <div className="tweetbox-input-btm">
+          <div className="tweetbox-input-btm-inner">
+            <div className="eth-btn-container">
+              <img src={ethNormal} alt ="" className="eth" />
+              <button
+                href="/"
+                type="submit"
+                className="tweetBox-tweetButton"
+              >
+                Tweet
+              </button>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   );

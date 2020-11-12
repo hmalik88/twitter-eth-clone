@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="123.352" height="200.079" viewBox="0 0 123.352 200.079">
-  <g id="success-eth" transform="translate(-10)">
-    <path id="Path_1" data-name="Path 1" d="M12,95.777,71.676,2l59.676,93.777-59.676,34.1Zm59.676,34.1V2" transform="translate(0 0)" fill="none" stroke="#a4f26b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
-    <path id="Path_2" data-name="Path 2" d="M12,64.888l59.676,34.1,59.676-34.1L71.676,145.877Zm59.676,80.989V98.989M12,43.575,71.676,18l59.676,25.575" transform="translate(0 52.201)" fill="none" stroke="#a4f26b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="21.495" height="34.67" viewBox="0 0 21.495 34.67">
+  <g id="success-eth" transform="translate(-11.5 -1.5)">
+    <path id="Path_1" data-name="Path 1" d="M12,18.1,22.247,2,32.495,18.1,22.247,23.959Zm10.247,5.856V2" transform="translate(0 0)" fill="none" stroke="#a4f26b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_2" data-name="Path 2" d="M12,26.052l10.247,5.856,10.247-5.856L22.247,39.959ZM22.247,39.959V31.907M12,22.392,22.247,18l10.247,4.392" transform="translate(0 -4.289)" fill="none" stroke="#a4f26b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
   </g>
 </svg>

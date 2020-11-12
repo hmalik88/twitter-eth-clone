@@ -6,26 +6,32 @@ const RightPanel = () => {
   const handleSubmit = () => {document.location.reload()}
   return (
     <div className="right-panel">
-      <div className="search">
-        <SearchIcon className="searchIcon" />
-        <form onSubmit={handleSubmit}>
-            <input 
-            id="search" 
-            placeholder="Search Twitter" 
-            type="text" 
-            autoComplete="off" 
+      <div className="right-panel-container">
+        <div className="search">
+          <SearchIcon className="searchIcon" />
+          <form onSubmit={handleSubmit}>
+              <input 
+              id="search" 
+              placeholder="Search Twitter" 
+              type="text" 
+              autoComplete="off" 
+              />
+          </form>
+        </div>
+        <div className="widgetContainer">
+          <div className="widget-header">
+            <h2>What's happening</h2>
+          </div>
+          <div className="widget-body">
+            <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName="AndreCronjeTech"
+              options={{height: 400}}
+              theme="dark"
             />
-        </form>
-      </div>
-      <div className="widgetContainer">
-        <h2>What's happening</h2>
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="AndreCronjeTech"
-          options={{height: 400}}
-          theme="dark"
-        />
-        <TwitterFollowButton screenName="AndreCronjeTech" options={{size: 'large'}} />
+            <TwitterFollowButton screenName="AndreCronjeTech" options={{size: 'large'}} />
+          </div>
+        </div>
       </div>
     </div>
   );
