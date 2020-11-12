@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+
 }
 
 body, html, #root {
@@ -422,11 +422,30 @@ code {
 /* SIDEBAR */
 
 
-.sidebar {
+.sidebar-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: flex-end;
   margin: 5px;
+}
+
+.sidebar {
+  width: 275px;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-top {
+  width: 255px;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column;
 }
 
 .sidebar-twitterIcon {
@@ -435,14 +454,29 @@ code {
   margin: 10px;
 }
 
-.sidebar-tweetButton {
-  background-color: #50b7f5 !important;
-  border: none !important;
-  color: white !important;
-  font-weight: 900 !important;
-  text-transform: inherit !important;
-  border-radius: 30px !important;
-  height: 50px !important;
+.sidebar-tweet-btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-width: 1px;
+  border-radius: 9999px;
+  text-decoration: none;
+  min-height: 39px;
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Helvetica Neue';
+  max-width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  color: white;
+  background-color: rgb(29,161,242);
+  margin-top: 25px;
+  margin-bottom: 20px;
+  height: 49px;
+  width: 187.5px;
 }
 
 .sidebarOption {
@@ -450,6 +484,9 @@ code {
   align-items: center;
   cursor: pointer;
   color: white;
+  padding-right: 30px;
+  height: 51.19px;
+  margin-bottom: 10px;
 }
 
 .sidebarOption:hover {
@@ -460,7 +497,8 @@ code {
 }
 
 .sidebarOption > .MuiSvgIcon-root {
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 10px;
 }
 
 .sidebarOption > h2 {
@@ -579,6 +617,7 @@ i {
   -webkit-text-stroke-width: thin;
   font-weight: 600;
   color: rgb(101, 119, 134);
+  cursor: pointer;
 }
 
 /* RIGHT PANEL */

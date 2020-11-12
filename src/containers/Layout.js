@@ -19,8 +19,8 @@ function Layout(props) {
     return(
         <>
             <Grid container className={classes.page}>
-                <Grid item className={classes.item} sm={3}><SideBar /></Grid>
-                <Grid item className={classes.item} sm={5}><Feed page={props.page} /></Grid>
+                <Grid item className={classes.item} sm={4}><SideBar /></Grid>
+                <Grid item className={classes.item} sm={4}><Feed page={props.page} /></Grid>
                 <Grid item className={classes.item} sm={4}><RightPanel /></Grid>
             </Grid>
         </>

@@ -14,23 +14,27 @@ import Link from "@material-ui/core/Link";
 
 function Sidebar() {
   return (
-    <div className="sidebar container">
-        <Link href="/home">
-            <TwitterIcon className="sidebar-twitterIcon mobileHidden" />
-        </Link>
+    <div className="sidebar-container">
         <div className="sidebar">
-            <SidebarOption active Icon={HomeIcon} text="Home" href="#" />
-            <SidebarOption Icon={SearchIcon} text="Explore" href="#" />
-            <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" href="https://github.com/hmalik88" />
-            <SidebarOption Icon={MailOutlineIcon} text="Messages" href="https://www.linkedin.com/in/hassan-b-malik/" />
-            <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" mobileHidden href="https://leetcode.com/hbmalik88/" />
-            <SidebarOption Icon={ListAltIcon} text="Lists" mobileHidden href="#" />
-            <SidebarOption Icon={PermIdentityIcon} text="Profile"  href="/" />
-            <SidebarOption Icon={MoreHorizIcon} text="More" mobileHidden href="#" />
-            <br/>
-            <Button variant="outlined" className="sidebar-tweetButton mobileHidden" fullWidth href="#">
-                Tweet
-            </Button>
+            <div className="sidebar-top">
+                <Link href="/home">
+                    <TwitterIcon className="sidebar-twitterIcon mobileHidden" />
+                </Link>
+                <SidebarOption active Icon={HomeIcon} text="Home" href="#" />
+                <SidebarOption Icon={SearchIcon} text="Explore" href="#" />
+                <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" href="https://github.com/hmalik88" />
+                <SidebarOption Icon={MailOutlineIcon} text="Messages" href="https://www.linkedin.com/in/hassan-b-malik/" />
+                <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" mobileHidden href="https://leetcode.com/hbmalik88/" />
+                <SidebarOption Icon={ListAltIcon} text="Lists" mobileHidden href="#" />
+                <SidebarOption Icon={PermIdentityIcon} text="Profile"  href="/" />
+                <SidebarOption Icon={MoreHorizIcon} text="More" mobileHidden href="#" />
+                <div className="sidebar-tweet-btn">
+                    <span>Tweet</span>
+                </div>
+            </div>
+            <div className="sidebar-bottom">
+
+            </div>
         </div>
     </div>
   );
