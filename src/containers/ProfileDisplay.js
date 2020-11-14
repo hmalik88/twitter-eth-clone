@@ -5,6 +5,7 @@ function ProfileDisplay() {
     return(
         <div className="profile-container">
             <ProfileHeader />
+
         </div>
 
     )

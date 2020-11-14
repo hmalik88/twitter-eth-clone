@@ -3,14 +3,10 @@ import TweetBox from "./TweetBox";
 import Post from "./Post";
 import {posts} from "../data"
 
-
-
-function Feed() {
-
+function Feed(props) {
   return (
     <div className="feed">
       <TweetBox />
-
         {posts.map((post) => (
           <Post
             key={posts.indexOf(post)}
