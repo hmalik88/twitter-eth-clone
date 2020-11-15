@@ -8,6 +8,7 @@ import LandingLoginForm from '../components/LandingLoginForm';
 import SignUpModal from '../components/SignUpModal';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
+import '../scss/LandingPage.scss';
 
 const useStyles = makeStyles({
     icon: {
@@ -25,13 +26,12 @@ function LandingPage() {
 
     const toggleSignUpModal = () =>{
         setModal(true);
-        const blinder = document.querySelector('.blinders');
-        blinder.classList.add('disabled');
+        const overlay = document.querySelector('.modal-overlay');
+        overlay.style.display = "block"
     }
 
     return(
         <div className="landing">
-            <div className="blinders">
                 <div className="landing-left">
                     <img src={TwitterLogo} alt="" className="landing-logo" />
                     <div className="left-landing-info">
@@ -71,8 +71,8 @@ function LandingPage() {
                         </Link>
                     </div>
                 </div>
-            </div>
         {isOpen ? <SignUpModal /> : null}
+        <div className="modal-overlay"></div>
         </div>
     )
 }

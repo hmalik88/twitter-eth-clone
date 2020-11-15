@@ -7,6 +7,7 @@ import unselectedEth from '../assets/unselected-eth.svg';
 import ethSuccess from '../assets/success-eth.svg';
 import ethError from '../assets/error-eth.svg';
 import sparkles from '../assets/sparkle.svg';
+import '../scss/TweetBox.scss';
 
 function TweetBox() {
 

@@ -1,0 +1,90 @@
+.edit-modal-container {
+    height: 0px;
+    width: 100%;
+}
+
+.edit-profile-modal {
+    min-height: 400px;
+    max-width: 80vw;
+    max-height: 90vh;
+    height: 435spx;
+    min-width: 600px;
+    background-color: rgb(21,32,43);
+    border-radius: 4px;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    bottom: 200px;
+    flex-flow: column;
+    visibility: hidden;
+}
+
+.edit-modal-header {
+    height: 53px;
+    display: flex;
+    border-bottom: 1px solid rgb(61,84,102);
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 15px;
+}
+
+.edit-header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-modal-body {
+    display: flex;
+    flex-flow: column;
+    padding: 15px 30px 30px 30px;
+}
+
+.close-container {
+    width: 59px;
+    height: 53px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.edit-cancel-btn {
+    height: 14.06px;
+    width: 14.06px;
+    cursor: pointer;
+    border-radius: 9999px;
+    padding: 8px;
+}
+
+.edit-cancel-btn:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.header-txt-container {
+    font-weight: 800;
+    font-size: 19px;
+    color: white;
+    font-family: 'Helvetica Neue';
+    width: 423.84px;
+}
+
+.save-btn {
+    width: 67.16px;
+    height: 30px;
+    border-radius: 9999px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.save-btn:hover {
+    background-color: rgb(26, 145, 218);
+}

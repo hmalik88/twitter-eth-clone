@@ -1,6 +1,7 @@
 import React from "react";
 import {TwitterFollowButton, TwitterTimelineEmbed} from "react-twitter-embed";
 import SearchIcon from "@material-ui/icons/Search";
+import '../scss/RightPanel.scss';
 
 const RightPanel = () => {
   const handleSubmit = () => {document.location.reload()}

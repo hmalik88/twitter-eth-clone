@@ -1,0 +1,146 @@
+.landing {
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+  
+.landing-left {
+    background-color: rgb(133,200,243);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.landing-right {
+    background-color: rgb(23,32,42);
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.landing-right, .landing-left {
+    padding: 15px;
+}
+
+.landing-logo {
+    height: 240vh;
+    top: -70vh;
+    position: absolute;
+    right: 5vh;
+    display: inline-block;
+    max-width: none;
+}
+
+.left-landing-info {
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.search-icon, .users-icon, .speech-icon {
+    height: 28.75px;
+    width: 28.75px;
+    position: relative;
+}
+
+.info-1, .info-2, .info-3 {
+    display: flex;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.info-1 > div, .info-2 > div, .info-3 > div {
+    margin-left: 15px;
+    line-height: 30px;
+    font-size: 19px;
+    color: white;
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+}
+
+.landing-right-info {
+    display: flex;
+    align-self: center;
+    align-items: stretch;
+    max-width: 380px;
+    flex-flow: column;
+    position: relative;
+    bottom: 20px;
+}
+
+.lr-txt-1 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Helvetica Neue';
+    overflow-wrap: break-word;
+    line-height: 1.3125;
+    display: inline;
+}
+
+.lr-txt-2 {
+    margin-top: 59px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: 'Helvetica Neue';
+    line-height: 1.3125;
+    color: white;
+}
+
+.sign-up-link, .log-in-link {
+    padding-left: 1em;
+    padding-right: 1em;
+    border-width: 1px;
+    border-radius: 9999px;
+    text-decoration: none;
+    min-height: 39px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sign-up-link {
+    margin-bottom: 15px;
+    background-color: rgb(29,161,242);
+    border-color: rgba(0,0,0,0);
+}
+
+.sign-up-link:hover {
+    background-color: rgb(26,145,218);
+}
+
+.log-in-link {
+    border: 1px solid rgb(29,161,242);
+}
+
+.log-in-link:hover {
+    background-color: rgba(29,161,242, 0.1);
+}
+
+.sign-up-btn, .log-in-btn {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Helvetica Neue';
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-btn {
+    color: white;
+}
+
+.log-in-btn {
+    color: rgb(29,161,242);
+}

@@ -3,6 +3,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import { makeStyles } from '@material-ui/core/styles';
 import LoginPageForm from '../components/LoginPageForm';
 import SignUpModal from '../components/SignUpModal';
+import '../scss/LoginPage.scss';
 
 const useStyles = makeStyles({
     icon: {
@@ -18,8 +19,8 @@ function LoginPage() {
 
     const openSignUp = () => {
         setModal(true);
-        const background = document.querySelector('.login-bg');
-        background.classList.add('disabled-1');
+        const modal = document.querySelector('.modal-overlay');
+        modal.style.display = "block";
     }
 
     const classes = useStyles();
@@ -34,6 +35,7 @@ function LoginPage() {
                 </div>
             </div>
             {isOpen ? <SignUpModal /> : null}
+            <div className="modal-overlay"></div>
         </div>
     )
 }

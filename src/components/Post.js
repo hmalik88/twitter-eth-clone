@@ -1,14 +1,14 @@
 import React from "react";
 import { Avatar } from "@material-ui/core";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
-import userAvatar from "../assets/user.svg";
+import '../scss/Posts.scss';
 
 
 const Post = ({ displayName, username, text, date }) => {
     return (
       <div className="post" key>
         <div className="avatar">
-          <Avatar src={userAvatar} />
+          <Avatar />
         </div>
         <div className="post-body">
           <div className="post-header">

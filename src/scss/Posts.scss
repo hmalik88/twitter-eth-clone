@@ -1,0 +1,74 @@
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(40,51,64);
+    padding-bottom: 10px;
+    max-width: 750px;
+}
+
+.post-body {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    color: white;
+}
+
+.post-body > img {
+    border-radius: 20px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    min-width: -webkit-fill-available;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-headerDescription {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.post-headerText > h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.verified {
+    font-size: 14px !important;
+    color: #50b7f5;
+}
+
+.post-headerSpecial {
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
+
+.avatar {
+    padding: 20px;
+    padding-top: 30px;
+}
+
+i.fa-heart:hover {
+    color: rgb(224, 36, 94)
+}
+
+.fa-comment:hover, .fa-external-link-alt:hover {
+    color: #50b7f5;
+}
+
+i.fa-retweet:hover {
+    color: rgb(23, 191, 99)
+}
+
+i {
+    -webkit-text-stroke-width: thin;
+    font-weight: 600;
+    color: rgb(101, 119, 134);
+    cursor: pointer;
+}

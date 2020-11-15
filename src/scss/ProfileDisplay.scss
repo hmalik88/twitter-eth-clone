@@ -1,0 +1,206 @@
+.profile-header {
+    padding-left: 10px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 53px;
+    width: 100%;
+}
+
+.header-left-arrow {
+    width: 15.94px;
+    height: 13.12px;
+    display: inline-block;
+    border-radius: 9999px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.header-left-arrow:hover {
+    background-color: rgba(29,161,242, 0.1);
+}
+
+.profile-header-info-container {
+    height: 53px;
+    display: flex;
+    flex-flow: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.profile-banner {
+    height: 199.33px;
+    width: 100%;
+    background-image: url('../assets/bridge.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.profile-name {
+    font-size: 19px;
+    font-family: 'Helvetica Neue';
+    color: white;
+    font-weight: 800;
+}
+
+.tweet-count {
+    font-size: 13px;
+    font-family: 'Helvetica Neue';
+    color: rgb(136,153,166);
+    line-height: calc(19.6875px);
+    font-weight: 400;
+}
+
+.profile-container {
+    border-bottom: 1px solid rgb(40,51,64);
+}
+
+.profile-info-container {
+    padding: 10px 15px 0px 15px;
+    margin-bottom: 15px;
+}
+
+.info-name {
+    font-size: 19px;
+    font-weight: 800;
+    color: white;
+    font-family: 'Helvetica Neue';
+}
+
+.info-username {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(136,153,166);
+    font-family: 'Helvetica Neue';
+    margin-bottom: 10px;
+}
+
+.user-info {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(136,153,166);
+    font-family: 'Helvetica Neue';
+    display: flex;
+    align-items: flex-end;
+}
+
+.user-item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.user-item > span {
+    display: flex;
+    text-align: end;
+    position: relative;
+    top: 2px;
+}
+
+.edit-btn-container {
+    height: 49px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.edit-btn {
+    height: 39px;
+    background-color: rgba(0,0,0,0);
+    color: rgb(29,161,242);
+    font-family: 'Helvetica Neue';
+    cursor: pointer;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid rgb(29,161,242);
+    border-width: 1px;
+    border-radius: 9999px;
+    width: 111.84px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.edit-btn:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.pin {
+    width: 13.58px;
+    height: 15.63px;
+    margin-right: 5px;
+}
+
+.balloon {
+    width: 13.67px;
+    height: 16.21px;
+    margin-right: 5px;
+}
+
+.calendar {
+    width: 15.63px;
+    height: 15.63px;
+    margin-right: 5px;
+}
+
+.u-info {
+    margin-right: 10px;
+}
+
+.f-count {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(136,153,166);
+    font-family: 'Helvetica Neue';
+    display: inline-block;
+}
+
+.f-1 {
+    margin-right: 20px;
+}
+
+.f-num {
+    font-weight: 700;
+    color: white;
+}
+
+.user-info {
+    margin-bottom: 15px;
+}
+
+.profile-filter {
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Helvetica Neue';
+    color: rgb(136,153,166);
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 52px;
+}
+
+.filter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 33%;
+    cursor: pointer;
+}
+
+.filter-box:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    color: rgb(29,161,242);
+}
+
+.filter-selected {
+    border-bottom: 2px solid rgb(29,161,242);
+    color: rgb(29,161,242);
+}
+
+.filter-selected > span {
+    position: relative;
+    top: 1px;
+}

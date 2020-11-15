@@ -2,6 +2,7 @@ import React from 'react';
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
+import '../scss/LogOutPage.scss';
 
 const useStyles = makeStyles({
     icon: {

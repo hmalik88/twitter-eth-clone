@@ -1,8 +1,8 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid'
-import SideBar from '../components/SideBar';
-import Feed from '../components/Feed';
-import RightPanel from '../components/RightPanel';
+import SideBar from './SideBar';
+import Feed from './Feed';
+import RightPanel from './RightPanel';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({

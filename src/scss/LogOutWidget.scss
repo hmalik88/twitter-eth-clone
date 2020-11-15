@@ -1,0 +1,100 @@
+.log-out-widget {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 9999px;
+}
+
+.log-out-widget:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.widget-avatar {
+    height: 39px;
+    width: 39px;
+}
+
+.log-out-widget-info {
+    display: flex;
+    flex-flow: column;
+    margin-left: 20px;
+}
+
+.name-widget {
+    font-family: 'Helvetica Neue';
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.username-widget {
+    font-family: 'Helvetica Neue';
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
+}
+
+.widget-arrow-container {
+    width: 79px;
+    height: 18.75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.widget-arrow {
+    width: 13.75px;
+    height: 13.75px;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 9999px;
+}
+
+.widget-popout {
+    width: 300px;
+    position: absolute;
+    bottom: 100px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Helvetica Neue';
+    font-size: 15px;
+    background-color: rgb(23,32,42);
+    display: flex;
+    flex-flow: column;
+    height: 47px;
+    box-shadow: rgba(136, 153, 166, 0.2) 0px 0px 15px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px;
+    border-radius: 16px;
+}
+
+.widget-popout-body {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.logout-link {
+    color: white;
+    font-weight: 400;
+    font-family: 'Helvetica Neue';
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.widget-popout-body:hover {
+    background-color: rgb(25,39,52);
+}
+
+.widget-tip, .popout-arrow {
+    width: 24px;
+    height: 16.25px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    bottom: 43.5px;
+    left: 200px;
+    filter: drop-shadow(rgba(61, 84, 102, .2) 0px 1px 2px);
+}
