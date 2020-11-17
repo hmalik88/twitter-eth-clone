@@ -6,7 +6,6 @@ import isEth from '../assets/is-eth.svg';
 import unselectedEth from '../assets/unselected-eth.svg';
 import ethSuccess from '../assets/success-eth.svg';
 import ethError from '../assets/error-eth.svg';
-import sparkles from '../assets/sparkle.svg';
 import '../scss/TweetBox.scss';
 
 function TweetBox() {
@@ -43,10 +42,6 @@ function TweetBox() {
 
   return (
     <div className="tweetbox-container">
-      <div className="feed-header">
-        <h2>Home</h2>
-        <img src={sparkles} className="sparkles" />
-      </div>
       <div className="tweetBox">
         <form className="tweet-form">
           <div className="tweetBox-input">

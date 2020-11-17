@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+}
+
+html {
   overflow: hidden;
 }
 
@@ -17,14 +21,6 @@ code {
     monospace;
 }
 
-.disabled-1 {
-  pointer-events: none;
-  background-color: rgba(110,118,125,1);
-}
-
-.position-signup {
-  left: 28vw;
-}
 
 /* FEED */
 
@@ -33,6 +29,7 @@ code {
   border-top: none;
   border-bottom: none;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Hide scrollbars */

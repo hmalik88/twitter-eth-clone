@@ -1,6 +1,7 @@
 import React from 'react';
 import leftArrow from '../assets/left-arrow.svg';
 import { Link } from 'react-router-dom';
+import '../scss/ProfileHeader.scss';
 
 function ProfileHeader() {
     return(

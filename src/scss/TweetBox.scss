@@ -1,37 +1,5 @@
-.feed-header {
-    position: sticky;
-    top: 0;
-    background-color: rgb(23,32,42);
-    z-index: 100;
-    border-bottom: 1px solid rgb(40,51,64);
-    padding: 15px 20px;
-    padding-right: 12px;
-    color: white;
-    height: 33px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.feed-header > h2 {
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.sparkles {
-    height: 22.5px;
-    width: 22.5px;
-    border-radius: 9999px;
-    padding: 8px;
-    cursor: pointer;
-}
-
-.sparkles:hover {
-    background-color: rgba(29,161,242, 0.1);
-}
-
 .tweetbox-container {
-    height: calc(145.94px + 64px);
+    height: 145.94px;
     width: 100%;
     display: flex;
     flex-flow: column;
