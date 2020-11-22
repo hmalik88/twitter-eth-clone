@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TwitterLogo from '../assets/Twitter_Logo_Blue.svg';
 import SearchIcon from '../assets/white-search.svg';
 import UsersIcon from '../assets/users.svg';
@@ -29,6 +29,11 @@ function LandingPage() {
         const overlay = document.querySelector('.modal-overlay');
         overlay.style.display = "block"
     }
+
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.style.overflow = 'hidden';
+    }, [])
 
     return(
         <div className="landing">

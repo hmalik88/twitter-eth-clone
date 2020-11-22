@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Grid from '@material-ui/core/Grid'
 import SideBar from './SideBar';
 import Feed from './Feed';
@@ -24,6 +24,12 @@ const useStyles = makeStyles({
   
 function Layout(props) {
     const classes = useStyles();
+
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.style.overflow = 'auto';
+    }, [])
+
     return(
         <>
             <Grid container className={classes.page}>

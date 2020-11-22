@@ -1,13 +1,15 @@
 .landing-form {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: absolute;
     padding-left: 15px;
     padding-right: 15px;
-    top: 15px;
+    top: 20px;
     right: 9%;
+    height: 100px;
 }
+
 
 .landing-button {
     background-color: rgba(0,0,0,0);
@@ -28,6 +30,8 @@
     align-content: center;
     border-style: solid;
     cursor: pointer;
+    top: 6.915px;
+    position: relative;
 }
 
 .landing-button:hover {

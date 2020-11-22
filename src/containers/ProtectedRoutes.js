@@ -8,11 +8,10 @@ function ProtectedRoutes() {
     return(
         <>
             <Switch>
+                <Route exact path="/home" component={HomePage} />   
                 <Route exact path="/logout" component={LogOutPage} />
-                <Route exact path="/home" component={HomePage} />
-                <Route path="/:username" component={ProfilePage} />
-                <Route exact path="/" component={HomePage} />
-                
+                <Route exact path="/:username" component={ProfilePage} />
+                <Route path="/" component={HomePage} />
             </Switch>
         </>
     )
