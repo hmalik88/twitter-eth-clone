@@ -61,7 +61,7 @@
     align-items: flex-start;
 }
 
-.edit-btn {
+.edit-btn, .follow-btn {
     height: 39px;
     background-color: rgba(0,0,0,0);
     color: rgb(29,161,242);
@@ -77,7 +77,7 @@
     font-weight: 700;
 }
 
-.edit-btn:hover {
+.edit-btn:hover, .follow-btn:hover {
     background-color: rgba(29, 161, 242, 0.1);
 }
 

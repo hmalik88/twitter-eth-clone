@@ -44,9 +44,8 @@ function SignUpModal() {
         const reply = await context.createAccount(userFields);
         const json = await reply.json();
         if (reply.ok) {
-            const { token }  = json;
-            localStorage.setItem('session', token);
-            context.createSession(token);
+            const { token, userName } = json;
+            context.createSession(token, userName);
             history.push('/home');
         } else {
             const emailErr = json.errors.messages.filter(message => message.includes('email'))[0];

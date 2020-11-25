@@ -22,9 +22,8 @@ function LandingLoginForm() {
         const reply = await context.logInUser(userFields);
         const json = await reply.json();
         if (reply.ok) {
-            const { token }  = json;
-            localStorage.setItem('session', token);
-            context.createSession(token);
+            const { token, userName } = json;
+            context.createSession(token, userName);
             history.push('/home');
         } else {
             const err = json.errors.message;

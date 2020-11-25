@@ -4,17 +4,17 @@
 }
 
 .edit-profile-modal {
-    min-height: 400px;
+    min-height: 375px;
     max-width: 80vw;
     max-height: 90vh;
-    height: 435spx;
+    height: 375px;
     min-width: 600px;
     background-color: rgb(21,32,43);
     border-radius: 4px;
     display: flex;
     position: absolute;
     z-index: 5;
-    bottom: 200px;
+    bottom: 290px;
     flex-flow: column;
     visibility: hidden;
 }
