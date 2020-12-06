@@ -8,10 +8,13 @@ function App() {
   const [userToken, setUserToken] = useState('');
   const [userName, setUserName] = useState('');
   const [timeline, setTimeline] = useState([]);
-  const [tweets, setTweets] = useState({});
-  const [tweeths, setTweeths] = useState({});
-  const [likes, setLikes] = useState({});
+  const [filter, setFilter] = useState('Tweets');
+  const [tweets, setTweets] = useState([]);
+  const [tweeths, setTweeths] = useState([]);
+  const [likes, setLikes] = useState([]);
   const [userInfo, setUserInfo] = useState({});
+  const [isTagging, setTagging] = useState(false);
+  const [offset, setOffset] = useState('125px');
   const history = useHistory();
 
   const createAccount = async (data) => {
@@ -71,6 +74,19 @@ function App() {
         'x-authentication-token': userToken
       },
       method: 'DELETE'
+    });
+    return result;
+  }
+
+  const createTweet = async (tweet) => {
+    const result = await fetch('http://localhost:3000/tweets', {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'x-authentication-token': userToken
+      },
+      method: 'POST',
+      body: JSON.stringify(tweet)
     });
     return result;
   }
@@ -135,6 +151,20 @@ function App() {
     return result;
   }
 
+  const getUsers = async (query = null) => {
+    let url = `http://localhost:3000/users`
+    if (query !== null) url = `http://localhost:3000/users?match=${query}`
+    const result = await fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'x-authentication-token': userToken
+      },
+      method: 'GET'
+    });
+    return result;
+  }
+
   const logOutUser = () => {
     destroySession();
     history.push('/');
@@ -147,23 +177,31 @@ function App() {
     getTweeths: getTweeths,
     getTweets: getTweets,
     getLikes: getLikes,
+    getUsers: getUsers,
     logOutUser: logOutUser,
     createAccount: createAccount,
     createSession: createSession,
     createFollowing: createFollowing,
     deleteFollowing: deleteFollowing,
+    createTweet: createTweet,
     setTimeline: setTimeline,
     setTweets: setTweets,
     setLikes: setLikes,
     setTweeths: setTweeths,
     setUserInfo: setUserInfo,
+    setFilter: setFilter,
+    setTagging: setTagging,
+    setOffset: setOffset,
+    filter: filter,
     tweets: tweets,
     timeline: timeline,
     likes: likes,
     tweeths: tweeths,
     userToken: userToken,
     userName: userName,
-    userInfo: userInfo
+    userInfo: userInfo,
+    isTagging: isTagging,
+    offset: offset
   }
 
   useEffect(() => {

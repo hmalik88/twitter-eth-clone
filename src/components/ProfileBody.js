@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { Avatar } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
@@ -14,7 +14,10 @@ const useStyles = makeStyles({
         height: "134px",
         marginLeft: "15px",
         position: "relative",
-        top: "55px"
+        top: "55px",
+        borderRadius: '9999px',
+        boxShadow: 'rgba(0,0,0,0.02) 0px 0px 2px inset',
+        border: '4px solid rgb(23,32,42)',
     }
 });
 
@@ -51,7 +54,7 @@ function ProfileBody() {
         else reply = await context.deleteFollowing(username);
         const json = await reply.json();
         if (reply.ok) {
-            e.target.innerText = e.target.innerText == 'Following' ? 'Follow' : 'Following';
+            e.target.innerText = e.target.innerText === 'Following' ? 'Follow' : 'Following';
             console.log('worked');
         }
         else console.log('didn\'t work');
@@ -64,7 +67,7 @@ function ProfileBody() {
 
     const date = sanitizeDate(context.userInfo['joined-date']);
 
-    const isOwnProfile = username == context.userName;
+    const isOwnProfile = username === context.userName;
 
     return(
         <div className="profile-body-container">

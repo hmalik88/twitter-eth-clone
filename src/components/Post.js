@@ -22,7 +22,7 @@ const Post = ({ displayName, username, text, date }) => {
               </h3>
             </div>
             <div className="post-headerDescription">
-              {text.split('\n').map(str => <p key={str}>{str}</p>)}
+              {text && text.split('\n').map(str => <p key={str}>{str}</p>)}
             </div>
           </div>
           <div className="post-footer">

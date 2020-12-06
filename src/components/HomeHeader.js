@@ -6,7 +6,7 @@ function HomeHeader() {
     return(
         <div className="feed-header">
             <h2>Home</h2>
-            <div><img src={sparkles} className="sparkles" /></div>
+            <div><img src={sparkles} className="sparkles" alt="sparkles"/></div>
         </div>
     )
 }

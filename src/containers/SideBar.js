@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useLocation } from 'react-router-dom';
 import TwitterIcon from "@material-ui/icons/Twitter";
 import SidebarOption from "../components/SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
@@ -14,9 +15,12 @@ import LogOutWidget from "../components/LogOutWidget";
 import StoreContext from '../store';
 import '../scss/SideBar.scss';
 
+
 function Sidebar() {
     const context = useContext(StoreContext);
     const { userName } = context;
+    const path = useLocation().pathname
+
 
   return (
     <div className="sidebar-container">
@@ -25,13 +29,13 @@ function Sidebar() {
                 <Link to="/home">
                     <TwitterIcon className="sidebar-twitterIcon mobileHidden" />
                 </Link>
-                <SidebarOption active Icon={HomeIcon} text="Home" href="/home" />
-                <SidebarOption Icon={SearchIcon} text="Explore" href="/home" />
+                <SidebarOption active={path === '/home'} Icon={HomeIcon} text="Home" href="/home"/>
+                <SidebarOption Icon={SearchIcon} text="Explore" href="/home"  optNum={2}  />
                 <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" href="https://github.com/hmalik88" />
                 <SidebarOption Icon={MailOutlineIcon} text="Messages" href="https://www.linkedin.com/in/hassan-b-malik/" />
                 <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" mobileHidden href="https://leetcode.com/hbmalik88/" />
                 <SidebarOption Icon={ListAltIcon} text="Lists" mobileHidden href="/home" />
-                <SidebarOption Icon={PermIdentityIcon} text="Profile"  href={`/${userName}`} />
+                <SidebarOption active={path !== '/home'} Icon={PermIdentityIcon} text="Profile"  href={`/${userName}`} />
                 <SidebarOption Icon={MoreHorizIcon} text="More" mobileHidden href="/home" />
                 <div className="sidebar-tweet-btn">
                     <span>Tweet</span>

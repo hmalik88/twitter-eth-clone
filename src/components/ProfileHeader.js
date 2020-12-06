@@ -7,10 +7,7 @@ import '../scss/ProfileHeader.scss';
 function ProfileHeader() {
     const context = useContext(StoreContext);
 
-    const { tweets } = context.tweets;
-
-    console.log(tweets);
-
+    const tweets = context.tweets;
 
     return(
         <div className="profile-header">

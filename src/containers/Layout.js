@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense } from 'react';
+import React, { useEffect } from 'react';
 import Grid from '@material-ui/core/Grid'
 import SideBar from './SideBar';
 import Feed from './Feed';
@@ -6,10 +6,6 @@ import RightPanel from './RightPanel';
 import HomeHeader from '../components/HomeHeader';
 import ProfileHeader from '../components/ProfileHeader';
 import { makeStyles } from '@material-ui/core/styles';
-
-// const HomeHeader = React.lazy(() => import('../components/HomeHeader'));
-// const ProfileHeader = React.lazy(() => import('../components/ProfileHeader'));
-// const Feed = React.lazy(() => import('./Feed'));
 
 const useStyles = makeStyles({
     item: {
@@ -38,7 +34,7 @@ function Layout(props) {
             <Grid container className={classes.page}>
                 <Grid item className={classes.item2} sm={4}><SideBar /></Grid>
                 <Grid item className={classes.item} sm={4}>
-                        {props.page == "home" ? <HomeHeader /> : <ProfileHeader />}
+                        {props.page === "home" ? <HomeHeader /> : <ProfileHeader />}
                         <Feed page={props.page} />
                 </Grid>
                 <Grid item className={classes.item} sm={4}><RightPanel /></Grid>

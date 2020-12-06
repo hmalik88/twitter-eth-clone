@@ -5,19 +5,24 @@ import Layout from './Layout';
 
 function HomePage() {
     const context = useContext(StoreContext);
-
-    const fetchTimeline = async () => {
-        const reply = await context.getTimeline();
-        const json = await reply.json();
-        if (reply.ok) context.setTimeline(json);
-        else context.logOutUser();
-    }
-
+    const { isTagging, offset } = context;
+    
     useEffect(() => {
+        const fetchTimeline = async () => {
+            const reply = await context.getTimeline();
+            const json = await reply.json();
+            if (reply.ok) context.setTimeline(json.timeline);
+            else context.logOutUser();
+        }
         fetchTimeline();
     }, []);
 
-    return <Layout page={"home"} />
+    return (
+        <div>
+            <Layout page={"home"} />
+            {isTagging ? (<div className="tag-modal" style={{top: offset}}></div>) : null}
+        </div>
+    )
 }
 
 export default HomePage;

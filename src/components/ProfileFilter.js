@@ -35,7 +35,10 @@ function ProfileFilter() {
                 break;
         }
         const json = await reply.json();
-        if (reply.ok) context[`set${resource}`](json);
+        if (reply.ok) {
+            context.setFilter(resource);
+            context[`set${resource}`](json[resource.toLowerCase()]);
+        }
         else console.log('something\'s off...');
     }
 

@@ -1,5 +1,4 @@
 .tweetbox-container {
-    height: 145.94px;
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -18,7 +17,6 @@
     border-bottom: 8px solid rgb(40,51,64);
     padding-right: 15px;
     padding-left: 10px;
-    height: 127.94px;
 }
 
 .tweetBox > form {
@@ -33,7 +31,7 @@
     display: flex;
 }
 
-.tweetBox-input > input {
+.tweet-input {
     flex: 1;
     margin-left: 20px;
     font-size: 20px;
@@ -42,13 +40,37 @@
     background-color: rgb(23,32,42);
     color: white;
     font-family: 'Helvetica Neue';
-    overflow-wrap: break-word;
+    padding-top: 8px;
+    width: calc(100% - 40px);
     white-space: pre-wrap;
 }
 
-.tweetBox-imageInput {
-    border: none;
-    padding: 10px;
+.tagged-text {
+    color: rgb(29,161,242);
+    cursor: pointer;
+}
+
+.tag-link {
+    text-decoration: none;
+}
+
+.tag-modal {
+    min-height: 100px;
+    max-height: 429.5px;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(23,32,42);
+    box-shadow: rgba(136, 153, 166, 0.2) 0px 0px 15px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px;
+    border-radius: 4px;
+    z-index: 6;
+    position: fixed;
+    left: 637px;
+}
+
+.tweet-input[contentEditable="true"]:empty:before {
+    content: attr(placeholder);
+    color: grey;
 }
 
 .tweetbox-input-btm {
@@ -64,14 +86,41 @@
     width: 87%;
     display: flex;
     justify-content: flex-end;
-    height: 100%;
+    height: 41px;
     align-items: flex-end;
     border-top: 1px solid rgb(42,51,63);
+    padding-top: 10px;
 }
 
-.eth {
-    margin-right: 30px;
+.eth-animation {
     cursor: pointer;
+    height: 80px;
+    width: 80px;
+    background-image: url('../assets/ethanimation.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 2900%;
+    position: relative;
+    left: 5px;
+    bottom: 1px;
+    border-radius: 9999px;
+}
+
+.eth-animation:hover {
+    background-position: right;
+}
+
+.eth-selected {
+    background-position: right;
+}
+
+.is-animating {
+    animation: eth-burst .8s steps(28) 1;
+}
+
+@keyframes eth-burst {
+    from {background-position: left;}
+    to {background-position: right;}
 }
 
 .eth-btn-container {
@@ -91,6 +140,7 @@
     width: 80px;
     height: 40px;
     cursor: pointer;
+    font-family: 'Helvetica Neue';
 }
 
 .tweetBox-tweetButton:hover {

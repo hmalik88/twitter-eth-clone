@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Redirect, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import StoreContext from '../store';
 import '../scss/LandingLoginForm.scss';
