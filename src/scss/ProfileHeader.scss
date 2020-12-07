@@ -20,6 +20,8 @@
     border-radius: 9999px;
     cursor: pointer;
     padding: 5px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .header-left-arrow:hover {

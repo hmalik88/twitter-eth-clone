@@ -65,6 +65,8 @@
     font-family: 'Helvetica Neue';
     line-height: 1.3125;
     font-size: 15px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .cancel-btn:hover {

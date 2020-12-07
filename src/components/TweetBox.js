@@ -30,6 +30,7 @@ function TweetBox() {
       setOffset(offset);
       setTagging(true);
     }
+    else if (isTagging && lastTag && !list.length) setTagging(false)
     else if (isTagging && !lastTag) setTagging(false);
     else if (isTagging && text[text.length - 1] !== ' ') await processUserList(lastTag, text);
     else if (isTagging && text[text.length - 1] === ' ') setTagging(false);

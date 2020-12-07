@@ -141,6 +141,8 @@
     height: 40px;
     cursor: pointer;
     font-family: 'Helvetica Neue';
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .tweetBox-tweetButton:hover {

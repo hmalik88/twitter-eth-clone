@@ -3,6 +3,9 @@
     display: flex;
     align-items: center;
     border-radius: 9999px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 .log-out-widget:hover {
@@ -74,6 +77,8 @@
     padding: 15px;
     cursor: pointer;
     border-radius: 16px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .logout-link {

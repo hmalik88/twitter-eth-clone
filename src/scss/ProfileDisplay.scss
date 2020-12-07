@@ -75,6 +75,8 @@
     width: 111.84px;
     font-size: 15px;
     font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .edit-btn:hover, .follow-btn:hover {
@@ -142,6 +144,8 @@
     padding: 15px;
     width: 33%;
     cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
 }
 
 .filter-box:hover {

@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from 'react';
 import StoreContext from '../store';
 import Layout from './Layout';
+import ClickAwayListener from 'react-click-away-listener';
 
 
 function HomePage() {
     const context = useContext(StoreContext);
-    const { isTagging, offset } = context;
+    const { offset, isTagging, setTagging } = context;
     
     useEffect(() => {
         const fetchTimeline = async () => {
@@ -17,11 +18,15 @@ function HomePage() {
         fetchTimeline();
     }, []);
 
+    const handleClickAway = () => setTagging(false);
+
     return (
-        <div>
-            <Layout page={"home"} />
-            {isTagging ? (<div className="tag-modal" style={{top: offset}}></div>) : null}
-        </div>
+            <div>
+                <Layout page={"home"} />
+                <ClickAwayListener onClickAway={handleClickAway} className='click-away' style={{backgroundColor: "rgb(23,32,42)"}}>
+                    <div className="tag-modal" style={{top: offset, display: isTagging ? 'block' : 'none'}}></div>)
+                </ClickAwayListener>
+            </div>
     )
 }
 

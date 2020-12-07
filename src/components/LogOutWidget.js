@@ -5,6 +5,8 @@ import widgetArrow from '../assets/widget-arrow.svg';
 import arrowTip from '../assets/arrow-tip.svg';
 import selectedTip from '../assets/arrow-tip-selected.svg';
 import '../scss/LogOutWidget.scss';
+import ClickAwayListener from 'react-click-away-listener';
+
 
 function LogOutWidget() {
 
@@ -34,23 +36,33 @@ function LogOutWidget() {
         }
     }
 
+    const handleClickAway = (e) => {
+        console.log('firing');
+        if (e.target.className === 'widget-arrow') return;
+        setWidget(false);
+    }
+
     return(
         <div>
-            <div className="widget-popout" style={{visibility: "hidden"}}>
-                <Link to="/logout" className="logout-link">
-                    <div className="widget-popout-body" onMouseLeave={handleLeave} onMouseOver={handleHover}>
-                        <span>Log out @hbm88</span>
-                    </div>
-                </Link>
-            </div>
-            <div className="widget-tip">
-                <img 
-                    src={arrowTip} 
-                    className="popout-arrow" 
-                    alt=""
-                    style={{visibility: "hidden"}} 
-                />
-            </div>
+            <ClickAwayListener onClickAway={handleClickAway}>
+                <div>
+                <div className="widget-popout" style={{visibility: isWidgetOpen ? 'visible': 'hidden'}}>
+                    <Link to="/logout" className="logout-link">
+                        <div className="widget-popout-body" onMouseLeave={handleLeave} onMouseOver={handleHover}>
+                            <span>Log out @hbm88</span>
+                        </div>
+                    </Link>
+                </div>
+                <div className="widget-tip">
+                    <img 
+                        src={arrowTip} 
+                        className="popout-arrow" 
+                        alt=""
+                        style={{visibility: isWidgetOpen ? 'visible': 'hidden'}} 
+                    />
+                </div>
+                </div>
+            </ClickAwayListener>
             <div className="log-out-widget">
                 <div className="widget-avatar">
                     <Avatar />

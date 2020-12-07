@@ -32,6 +32,8 @@
     cursor: pointer;
     top: 6.915px;
     position: relative;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .landing-button:hover {
