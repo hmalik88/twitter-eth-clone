@@ -1,6 +1,7 @@
 # notTwitter
 
-A twitter clone w/ an added feature called Tweeths. You can tag a friend and send them an amount of ETH through a tweeth. 
+A twitter clone w/ an added feature called Tweeths. You can tag a friend and send them an amount of ETH through a tweeth.
+In case you don't want to run the app, you can view a demo of the project @ https://www.youtube.com/watch?v=nXrGG41zCEA&t=2s
 
 ## Instructions
 
